@@ -1,87 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<!-- BIBLIOTECA DE FUNÇÕES DEFINIDAS EM JAVASCRIPT -->
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="bootstrap-4.0.0/js/bootstrap.min.js"></script>
+<head>
+	<title>Formulário de Registro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/estilo.css" type="text/css" rel="stylesheet" />
 
-		<!-- Biblioteca para utilização de ícones -->
-		<!-- https://fontawesome.com/v4.7.0/icons/  Lista de ícones -->
-		<link rel="stylesheet" href="awesome/css/font-awesome.min.css" >
-
-		<!-- CHAMADA DOS ESTILOS CSS bootstrap e estilo próprio -->
-		<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.css">
-		<link rel="stylesheet" href="css/estilo.css" >
-
-		<!-- Mascara para cpf, cep, monetário -->
-		<script src="js/maskedinput.min.js"></script>
-		<script type="text/javascript" src="js/priceformat.js"></script>
-
-		<!-- DEFINIÇÃO DO ÍCONE E TÍTULO DA ABA DO NAVEGADOR -->
-		<link rel="shortcut icon" type="imagens/png" href="img/favicon.png"/>
-		<title>Meu Novo Site</title>
-		<!-- Identificação do autor da página, pode ser a empresa também -->
-		<meta name="author" content="Robson">
-		<!-- Uma breve descrição do seu site para os buscadores encontrarem seu site -->
-		<meta name="description" content="Definição de um template para construção de um sistema qualquer">
-		<!-- Palavras chave que definem o seu sistema. É comum utilizar até 5 palavras -->
-		<meta name="keywords" content="sites, web, meta tag, código, html">
-
-	</head>
-	<body>
-		<div class="container">
+</head>
+<body>
+	<form action="#">
+		<h2 id="titulo">Cadastro de Pessoas</h2>
+		<div class="input-container">
+			<i class="fa fa-user icon"></i>
+			<input class="input-field" type="text" placeholder="Nome do usuário" name="nome">
 		</div>
-      <div class="container-fluid" id="conteudo">
-
-				<div class="formulario">
-					<h4><i class="fa fa-user"></i> Cadastro de Usuário</h4>
-					<label>Nome</label>
-					<input type="text" class="form-control" id="nome" >
-					<hr>
-
-					<label>Data Nascimento</label>
-					<input type="text" class="form-control mascaraData" id="datanascimento" >
-					<hr>
-
-					<label>Login</label>
-					<input type="text" class="form-control" id="login" >
-					<hr>
-
-					<label>Senha</label>
-					<input type="password" class="form-control" id="senha" >
-					<hr>
-
-					<label>Confirmar senha</label>
-					<input type="password" class="form-control" id="confirmarSenha" >
-					<hr>
-
-					<button class="btn btn-success" onclick="salvar()">
-						<i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Enviar
-					</button>
-					<a href="">Voltar</a>
-				</div>
-
-			</div>
+		<div class="input-container">
+			<i class="fa fa-envelope icon"></i>
+			<input class="input-field" type="text" placeholder="E-mail" name="email">
 		</div>
-
-
-		<!-- DEFINIÇÃO DAS CAIXAS DE MENSAGEM -->
-		<div id="alerta_sucesso" style="position: fixed; top:0px; left:0px; width: 100%; display:none;" class="alert alert-success">
-			<span class="texto">Alerta de sucesso!</span>
+		<div class="input-container">
+			<i class="fa fa-key icon"></i>
+			<input class="input-field" type="password" placeholder="Senha" name="senha">
 		</div>
-
-
-		<div id="alerta_erro" class="alert alert-danger" style="position: fixed; top:0px; left:0px; width: 100%; display:none;">
-			<span class="texto">Alerta de erro!</span>
-		</div>
-
-
-		<div id="alerta_aviso" class="alert alert-warning" style="position: fixed; top:0px; left:0px; width: 100%; display:none;">
-			<span class="texto">Este alert possui botão de fechar!</span>
-			<button type="button" class="close" data-dismiss="alert">
-				<span>&times;</span>
-			</button>
-		</div>
-	</body>
+		<button type="submit" class="btn">Registrar</button>
+	<form>
+</body>
 </html>
